@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Shiro 为我们提供了 CacheManager 即缓存管理，将用户权限数据存储在缓存，可以提高它的性能。
+    支持 EhCache、Redis 等常规缓存，这里为了简单起见就用 EhCache 了 ，
+-->
+<ehcache updateCheck="false" name="shiroCache">
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="false"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+    />
+</ehcache>
