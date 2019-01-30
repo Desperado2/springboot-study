@@ -1,0 +1,2 @@
+# 我们需要Spring容器初始化加载我们的 SwaggerAutoConfiguration 那么必须指定初始化类路径
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.desperado.chapter14.framework.swagger.SwaggerAutoConfiguration
